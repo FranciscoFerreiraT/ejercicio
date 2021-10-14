@@ -1,0 +1,16 @@
+version: '2'
+services:
+  asir_bind2:
+    image: internetsystemsconsortium/bind9:9.11
+    ports:
+      - 53:53
+    volumes:
+      - ejercicio:/etc/bind
+      - ejercicio2:/var/cache/bind
+      - ejercicio3:/var/lib/bind
+      - ejercicio4:/var/log 
+volumes:
+  ejercicio:
+  ejercicio2:
+  ejercicio3:
+  ejercicio4:
